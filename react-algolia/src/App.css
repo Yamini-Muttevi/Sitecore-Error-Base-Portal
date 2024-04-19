@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: rgb(242, 248, 251);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page-title {
+  background-image: linear-gradient(
+    -180deg,
+    transparent 0%,
+    transparent 64%,
+    rgb(255, 216, 95) 64%,
+    rgb(255, 216, 95) 87%,
+    transparent 87%,
+    transparent 100%
+  );
+  font-size: 2em;
+  color: rgb(42, 48, 57);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  display: inline-block;
+  letter-spacing: 0.1115em;
+  font-weight: 800;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.posts {
+  display: grid;
+  row-gap: 30px;
+}
+
+.post-card-link-wrapper {
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  display: block;
+}
+
+.post-card-link-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
+}
+
+.post-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.post-card-category {
+  display: block;
+  color: rgb(11, 106, 230);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.post-card-title {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.008em;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(42, 48, 57);
+  display: block;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.post-card-footnote {
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgb(42, 48, 57);
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: auto;
+  max-height: 1.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-card-footnote span {
+  color: rgb(219, 227, 231);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.state-message {
+  color: rgb(42, 48, 57);
+  font-weight: 600;
+}
