@@ -26,19 +26,26 @@ function App() {
 
   return (
     <main>
-      <h1 className="page-title">Exceptions</h1>
-      <input
+  <div className="main">
+     <img src="Banner-s.png" className="banner-img"/>
+    
+     </div>
+     <div className="search">
+        <input
         type="text"
         className="posts-search"
-        placeholder="Type your search here"
+        placeholder="Find your Exception"
         value={searchValue}
-        onChange={onSearchChange}
+        onChange={onSearchChange} 
+  />
+</div>
     
-      />
+    
       <section className="posts">
         {!posts?.length && <p className="state-message">{loading ? 'Fetching posts...' : 'No results!'}</p>}
         {!!posts?.length && posts.map((post) =>  <div className="how-section1"><Post post={post} key={post.objectID} ></Post> </div>  )}
       </section>
+
     </main>
   )
 }

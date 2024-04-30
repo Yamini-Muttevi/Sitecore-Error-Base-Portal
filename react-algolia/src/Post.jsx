@@ -8,7 +8,7 @@ export const Post = ({ post}) => {
       <div className="row">
           <div className="col-md-6 how-img">
         
-              <img src="error.png" className="rounded-circle img-fluid" alt=""/>
+              <img src="ExceptionSitecore.png" className="rounded-circle img-fluid" alt=""/>
           </div>
           <div className="col-md-6">
               <h4></h4>
