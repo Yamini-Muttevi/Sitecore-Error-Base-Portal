@@ -27,7 +27,7 @@ function App() {
   return (
     <main>
   <div className="main">
-     <img src="Banner-s.png" className="banner-img"/>
+     <img src="Banner-Portal.png" className="banner-img"/>
     
      </div>
      <div className="search">
